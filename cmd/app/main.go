@@ -27,5 +27,6 @@ func main() {
 		Port:     "5432",
 	})
 	db := database.WrapDatabase(dbpool)
+
 	http.ListenAndServe(":8080", r)
 }
